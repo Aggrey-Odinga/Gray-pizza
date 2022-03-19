@@ -26,25 +26,27 @@ html::-webkit-scrollbar{
     width: 1rem;
 }
 html::-webkit-scrollbar-thumb{
-    background: var(--c1r4);
+    background: var(--c1r3);
 }
 section{
     padding: 4rem 9%;
     margin-top: 8rem;
 }
 section h3{
-    font-size: 3rem;
+    font-size: 8rem;
     color: var(--c1r2);
     text-transform: none;
     text-align: center;
     letter-spacing: .2rem;
+    font-weight: 900;
 }
 section p{
-    color: var(--c1r2);
+    color: rgba(255, 255, 255, 0.986);
     font-size: 3rem;
     text-transform: capitalize;
     line-height: 2.5rem;
     word-wrap: normal;
+    font-weight: bolder;
 }
 
 .btn{
@@ -77,7 +79,7 @@ section p{
     right: 0;
     z-index: 1000;
     display: flex;
-    background: var(--c1r4);
+    background: var(--c1r3);
     color: var(--c1r2);
     padding: 3rem 9%;
     align-items: center;
@@ -151,8 +153,9 @@ section p{
 }
 /* home */
 .home{
-    height: 80vh;
-    background: url(/images/food-photographer-david-fedulov-Xt84tIHbjRY-unsplash.jpg);
+    height: 100vh;
+    background: url(/images/henry-perks-TStCoAiFjDY-unsplash.jpg);
+    opacity: 1;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -170,7 +173,24 @@ section p{
     color: var(--c1r4);
 }
 
-
+/* About page */
+.about-sec{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+}
+.img img{
+    width: 45rem;
+    height: auto;
+    text-align: center;
+    animation: icon 4s ease infinite;
+}
+.about-content h3{
+    background: url(/images/background1.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--c1r4);
+}
+.about
 
 
 
