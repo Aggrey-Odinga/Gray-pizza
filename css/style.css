@@ -136,7 +136,7 @@ html::-webkit-scrollbar-thumb{
     .head .navbar{
         position: absolute;
         top: 100%;
-        right: 100%;
+        right: -100%;
         width: 100%;
         background: var(--c1r3);
         font-size: 2rem;
