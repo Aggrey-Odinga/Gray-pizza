@@ -104,6 +104,53 @@ html::-webkit-scrollbar-thumb{
 }
 .search-bar.active{
     border: hidden;
-    transition: .2 ease;
+    transition: .2s ease;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+}
+
+
+
+
+
+/* media queries */
+@media(max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:768px){
+    #bars{
+        display: inline-block;
+    }
+    .search-bar input{
+        width: 100%;
+    }
+    .head .navbar{
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        width: 100%;
+        background: var(--c1r3);
+        font-size: 2rem;
+    }
+    .head .navbar a{
+        margin: 2rem 2.5rem;
+        display: block;
+        border-right: .1rem solid var(--c1r4);
+    }
+    .head .navbar a:hover{
+        transform: translateX(2rem);
+    }
+    .head .navbar.active{
+        right: .5rem;
+        transition: .4s ease-in;
+    }
 }
