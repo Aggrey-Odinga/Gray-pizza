@@ -28,6 +28,45 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-thumb{
     background: var(--c1r4);
 }
+section{
+    padding: 4rem 9%;
+    margin-top: 8rem;
+}
+section h3{
+    font-size: 3rem;
+    color: var(--c1r2);
+    text-transform: none;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+section p{
+    color: var(--c1r2);
+    font-size: 3rem;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    word-wrap: normal;
+}
+
+.btn{
+    margin-top: 2rem;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    color: var(--c1r3);
+    background: var(--c1r2);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover{
+
+}
+
 .head{
     position: fixed;
     top: 0;
@@ -107,6 +146,27 @@ html::-webkit-scrollbar-thumb{
     transition: .2s ease;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 }
+/* home */
+.home{
+    height: 80vh;
+    background: url(/images/food-photographer-david-fedulov-Xt84tIHbjRY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home-content{
+    display: grid;
+    grid-template-columns: 1.2fr;
+}
+.inner-content{
+    max-width: 100%;
+    margin-top: 20rem;
+    text-align: center;
+}
+.inner-content i{
+    color: var(--c1r4);
+}
+
 
 
 
