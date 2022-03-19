@@ -64,7 +64,10 @@ section p{
     outline: none;
 }
 .btn:hover{
-
+    background-color: var(--c1r3);
+    box-shadow: 0 2rem 2rem rgba(255, 85, 94, 0.4);
+    color: var(--c1r2);
+    transform: translateY(-1rem);
 }
 
 .head{
