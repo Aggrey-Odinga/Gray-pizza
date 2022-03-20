@@ -384,6 +384,35 @@ textarea{
     cursor: pointer;
     transition: .5s ease;
 }
+.order-overlay{
+    height: 50vh;
+    padding: 2rem;
+    background-color: rgba(245, 43, 43, 0.712);
+    border-radius: 2rem;
+}
+.order-summary h1, .summary {
+    color: #000;
+    margin-top: 30px;
+}
+#list li {
+    font-size: 24px;
+}
+.cdata {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.cdata-overlay{
+    background-color: rgba(245, 37, 37, 0.733);
+    border-radius: 2rem;
+    margin: auto;
+}
+label{
+    font-size: 20px;
+}
+
+
+
+
 
 
 
