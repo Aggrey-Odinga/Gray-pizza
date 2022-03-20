@@ -11,3 +11,20 @@ document.querySelector('#bars').onclick = () => {
     menu.classList.toggle('active');
     searchfrm.classList.remove('active');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.onscroll = () => {
+    menu.classList.remove('active');
+    searchfrm.classList.remove('active')
+}
