@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-:root{
-    --c1r1:#f95b11;
-    --c1r2:#fff;
-    --c1r3:#000;
-    --c1r4:#f42f1c;
-    --c1r5:limegreen;
+
+:root {
+    --c1r1: #f95b11;
+    --c1r2: #fff;
+    --c1r3: #000;
+    --c1r4: #f42f1c;
+    --c1r5: limegreen;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,23 +17,41 @@
     text-transform: uppercase;
 }
 
-html{
+html {
     font-size: 65%;
     scroll-behavior: smooth;
     scroll-padding-top: 8rem;
     overflow-x: hidden;
 }
-html::-webkit-scrollbar{
+
+html::-webkit-scrollbar {
     width: 1rem;
 }
-html::-webkit-scrollbar-thumb{
+
+html::-webkit-scrollbar-thumb {
     background: var(--c1r3);
 }
-section{
+
+section {
     padding: 4rem 9%;
     margin-top: 8rem;
 }
-section h3{
+
+section h4 {
+    margin: 0 0 1rem 25rem;
+    padding: .2rem;
+    width: 50%;
+    font-size: 3rem;
+    color: var(--c1r2);
+    text-transform: none;
+    text-align: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    clip-path: polygon(0% 15%, 34% 33%, 15% 0%, 85% 0%, 66% 34%, 100% 15%, 100% 85%, 67% 64%, 85% 100%, 15% 100%, 31% 65%, 0% 85%);
+    background: var(--c1r4);
+}
+
+section h3 {
     font-size: 8rem;
     color: var(--c1r2);
     text-transform: none;
@@ -40,7 +59,8 @@ section h3{
     letter-spacing: .2rem;
     font-weight: 900;
 }
-section p{
+
+section p {
     color: rgba(255, 255, 255, 0.986);
     font-size: 3rem;
     text-transform: capitalize;
@@ -49,7 +69,7 @@ section p{
     font-weight: bolder;
 }
 
-.btn{
+.btn {
     margin-top: 2rem;
     padding: 1.3rem 4rem;
     font-size: 1.5rem;
@@ -65,37 +85,42 @@ section p{
     cursor: pointer;
     outline: none;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--c1r3);
     box-shadow: 0 2rem 2rem rgba(255, 85, 94, 0.4);
     color: var(--c1r2);
     transform: translateY(-1rem);
 }
 
-.head{
+.head {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     display: flex;
-    background: var(--c1r3);
+    background: var(--c1r4);
     color: var(--c1r2);
     padding: 3rem 9%;
     align-items: center;
     justify-content: space-between;
 }
-.head h1{
+
+.head h1 {
     font-size: 2.5rem;
 }
-.head .fa-pizza-slice{
+
+.head .fa-pizza-slice {
     animation: icon 5s ease infinite;
 }
-@keyframes icon{
-    25%{
+
+@keyframes icon {
+    25% {
         transform: translateY(-1.5rem);
     }
-    50%{
+
+    50% {
         transform: translateY(1.5rem);
     }
 }
@@ -106,27 +131,31 @@ section p{
     font-weight: 600;
     margin: 0 2rem;
 }
-.head .navbar a:hover{
+
+.head .navbar a:hover {
     color: var(--c1r3);
     transition: .4s ease;
 }
 
-.head .side-bar i{
+.head .side-bar i {
     padding: 1.5rem;
     font-size: 2.1rem;
     border: none;
     background: var(--c1r2);
     color: var(--c1r4);
 }
-.head .side-bar i:hover{
+
+.head .side-bar i:hover {
     background: var(--c1r3);
     color: var(--c1r4);
     transition: .4s ease;
 }
-#bars{
+
+#bars {
     display: none;
 }
-.search-bar{
+
+.search-bar {
     height: 7rem;
     padding: 0 1rem;
     display: flex;
@@ -138,7 +167,8 @@ section p{
     background: var(--c1r3);
     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 0 0);
 }
-.search-bar input{
+
+.search-bar input {
     width: 100%;
     background: none;
     border: hidden;
@@ -146,13 +176,15 @@ section p{
     font-size: 1.5rem;
     color: #fff;
 }
-.search-bar.active{
+
+.search-bar.active {
     border: hidden;
     transition: .2s ease;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 }
+
 /* home */
-.home{
+.home {
     height: 100vh;
     background: url(/images/henry-perks-TStCoAiFjDY-unsplash.jpg);
     opacity: 1;
@@ -160,63 +192,101 @@ section p{
     background-position: center;
     background-attachment: fixed;
 }
-.home-content{
+
+.home-content {
     display: grid;
     grid-template-columns: 1.2fr;
 }
-.inner-content{
+
+.inner-content {
     max-width: 100%;
     margin-top: 20rem;
     text-align: center;
 }
-.inner-content i{
-    color: var(--c1r4);
+
+.inner-content i {
+    color: var(--c1r1);
 }
 
 /* About page */
-.about-sec{
+.about-sec {
     display: grid;
     grid-template-columns: 1.2fr 1.2fr;
 }
-.img img{
+
+.img img {
     width: 45rem;
     height: auto;
     text-align: center;
     animation: icon 4s ease infinite;
 }
-.about-content h3{
+
+.about-content h3 {
     background: url(/images/background1.png);
     background-size: cover;
     background-position: center;
     color: var(--c1r4);
 }
-.about
+
+.about .btn {
+    border: .1rem solid var(--c1r4);
+}
+
+.about-content p {
+    padding-bottom: 2rem;
+    color: var(--c1r3);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.about-inner h5 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.about-inner .fa-circle-arrow-right {
+    color: var(--c1r4);
+    padding-right: 1rem;
+}
+
+.about-inner h5:hover {
+    transform: translateX(2rem);
+    transition: 1s ease;
+}
 
 
 
 
 /* media queries */
+
 @media(max-width:991px) {
-    html{
+    html {
         font-size: 55%;
     }
-    header{
+
+    header {
         padding: 2rem;
     }
 }
-@media(max-width:450px){
-    html{
+
+@media(max-width:450px) {
+    html {
         font-size: 50%;
     }
 }
-@media(max-width:768px){
-    #bars{
+
+@media(max-width:768px) {
+    #bars {
         display: inline-block;
     }
-    .search-bar input{
+
+    .search-bar input {
         width: 100%;
     }
-    .head .navbar{
+
+    .head .navbar {
         position: absolute;
         top: 100%;
         right: -100%;
@@ -224,15 +294,18 @@ section p{
         background: var(--c1r3);
         font-size: 2rem;
     }
-    .head .navbar a{
+
+    .head .navbar a {
         margin: 2rem 2.5rem;
         display: block;
         border-right: .1rem solid var(--c1r4);
     }
-    .head .navbar a:hover{
+
+    .head .navbar a:hover {
         transform: translateX(2rem);
     }
-    .head .navbar.active{
+
+    .head .navbar.active {
         right: .5rem;
         transition: .4s ease-in;
     }
