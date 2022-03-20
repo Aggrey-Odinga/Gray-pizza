@@ -39,7 +39,7 @@ section {
 
 section h4 {
     margin: 0 0 8rem 35rem;
-    padding: .2rem;
+    padding: .9rem;
     width: 50%;
     font-size: 3rem;
     color: var(--c1r2);
@@ -48,7 +48,7 @@ section h4 {
     align-items: center;
     letter-spacing: .1rem;
     clip-path: polygon(0% 15%, 34% 33%, 15% 0%, 85% 0%, 66% 34%, 100% 15%, 100% 85%, 67% 64%, 85% 100%, 15% 100%, 31% 65%, 0% 85%);
-    background: var(--c1r4);
+    background: var(--c1r3);
 }
 
 section h3 {
@@ -222,7 +222,7 @@ section p {
 }
 
 .about-content h3 {
-    background: url(/images/background1.png);
+    /* background: url(/images/background1.png); */
     background-size: cover;
     background-position: center;
     color: var(--c1r4);
@@ -235,13 +235,13 @@ section p {
 .about-content p {
     padding-bottom: 2rem;
     color: var(--c1r3);
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .about-inner h5 {
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 700;
 }
@@ -337,9 +337,9 @@ section p {
 .contact-inner-col p{
     padding: .5rem 0;
     line-height: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
-    color: #aaa;
+    color: rgb(0, 0, 0);
     font-weight: 600;
 }
 .contact-inner-col input,
@@ -360,7 +360,7 @@ textarea{
     padding: 3rem;
     text-align: center;
     justify-content: space-between;
-    background: #aaa;
+    background: rgb(0, 0, 0);
 }
 .copyright i{
     font-size: 2rem;
