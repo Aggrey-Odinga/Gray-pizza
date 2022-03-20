@@ -38,7 +38,7 @@ section {
 }
 
 section h4 {
-    margin: 0 0 1rem 25rem;
+    margin: 0 0 8rem 35rem;
     padding: .2rem;
     width: 50%;
     font-size: 3rem;
@@ -329,6 +329,10 @@ section p {
     .search-bar input {
         width: 100%;
     }
+    section h4{
+        margin-left: 10rem;
+        text-align: center;
+    }
 
     .head .navbar {
         position: absolute;
@@ -353,4 +357,16 @@ section p {
         right: .5rem;
         transition: .4s ease-in;
     }
+    .home-content{
+        display: inline-block;
+    }
+    .home .home-content{
+        text-align: center;
+    }
+  .about-sec{
+      display: inline-block;
+  }
+  .menu-content{
+      display: inline-block;
+  }
 }
