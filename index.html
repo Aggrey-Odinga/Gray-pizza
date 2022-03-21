@@ -38,9 +38,12 @@
         <div class="home-content">
             <div class="inner-content">
                 <h3>Welcome To Gray's&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;pizza</h3> <br> <br>
-                <p>We are the pizza supreme of your dreams. <br> When it comes to quality, we go to the source. <br> <br>
+                <p>We are the pizza supreme of your dreams. <br> <br> When it comes to quality, we go to the source.
+                    <br>
+                    <br>
                     Topped with lots of pepperoni so you won't
-                    feel lonely.</p>
+                    feel lonely.
+                </p>
                 <a href="#menu"><button class="btn">Menu</button></a>
             </div>
             <div class="inner-content-img">
@@ -194,7 +197,7 @@
                     <form class="col-sm-6 offset-sm-3 text-center">
                         <label for="#">Choose Your Flavour</label>
                         <select class="custom-select custom-select-lg mb-3" id="flavour" required>
-                            <option selected>Default Custom Select Menu</option>
+
                             <option value="pepperchicken">Pepper Barbecue Chicken</option>
                             <option value="hawaiian">Hawaiian Pizza</option>
                             <option value="beefmushroom">Beef and Mushroom</option>
@@ -205,27 +208,26 @@
                         </select>
                         <label for="#">Pick Preferred Size</label>
                         <select class="custom-select custom-select-lg mb-3" id="size" required>
-                            <option selected>Default Custom Select Menu</option>
-                            <option value="regular">Regular</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
+
+                            <option value="small">Small @ Ksh. 400</option>
+                            <option value="medium">Medium @ Ksh. 700</option>
+                            <option value="large">Large @ Ksh. 1500</option>
                         </select>
 
                         <label for="crust">Pick your favorite Crust</label>
                         <select class="custom-select custom-select-lg mb-3" id="crust" required>
-                            <option selected>Default Custom Select Menu</option>
-                            <option value="thin">Thin Crust Ksh. 100</option>
-                            <option value="thick">Thick Crust Ksh. 250</option>
-                            <option value="flatbread">FlatBread Crust Ksh. 300</option>
+
+                            <option value="thin">Thin N Crispy Ksh. 100</option>
+                            <option value="crispy">Crispy crust Ksh. 250</option>
+                            <option value="gluten">Gluten-free crust Ksh. 300</option>
                             <option value="custom">Custom Crust Ksh. 380</option>
                         </select>
 
                         <label>Choose Your favourite Toppings</label>
                         <select class="custom-select custom-select-lg mb-3" id="toppings" required>
-                            <option selected>Default Custom Select Menu</option>
                             <option value="tomato">Tomato @ Ksh. 100</option>
                             <option value="onions">Onions @ Ksh. 100</option>
-                            <option value="mushroom">Mushroom @ Ksh. 100</option>
+                            <option value="mushroom">Mushroom @ Ksh. 150</option>
                             <option value="greenpepper">Green Pepper @ Ksh. 100</option>
                             <option value="olives">Olives @ Ksh. 150</option>
                             <option value="pineapple">Pineapple @ Ksh. 150</option>
@@ -238,9 +240,9 @@
                         <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                             required>
 
-                        <a href="#summary">
-                            <button class="btn" id="checkout">Checkout</button>
-                        </a>
+
+                        <button class="btn" id="checkout">Checkout</button>
+
                     </form>
                 </div>
 
@@ -250,15 +252,16 @@
         </div>
 
         <div class="order-summary" id="sum-order">
-            <h1 class="text-center" id="summary">Here's Your Order</h1>
+            <h1 class="text-center summary">Your Order</h1>
             <h2 class="text-center summary">Greetings, your order is as follows:</h2>
             <ol id="list" class="text-center sum">
             </ol>
             <div class="cdata-overlay">
                 <div class="customerdata row">
                     <div class="col-sm-3"></div>
+
                     <form action="" class="form-group col-sm-6 data">
-                        <input type="text" class="form-control cdata" placeholder="Please Enter your Name">
+                        <input type="text" class="form-control cdata" id="name" placeholder="Please Enter your Name">
                         <input type="text" class="form-control cdata" placeholder="Please Enter your Mobile number">
                         <input type="text" class="form-control cdata" placeholder="Please Enter your location ">
                         <br>
@@ -268,10 +271,10 @@
                     <div class="col-sm-3"></div>
                 </div>
             </div>
-            <!-- <div class="d-block mx-auto text-center">
-                <button class='deliver'>Delivery</button>
-                <button class='delivernot'>Pick Up</button>
-            </div> -->
+            <div class="d-block mx-auto text-center">
+                <button class="btn" id='deliver'>Delivery</button>
+            </div>
+
         </div>
         </div>
         </div>
@@ -287,7 +290,7 @@
                 </div>
                 <div class="contact-inner-col">
                     <h1>Contact Us&nbsp;<i class="fas fa-paper-plane"></i></h1>
-                    <p>Umoja innercore, Nairobi, 30200, +255712345678</p>
+                    <p>Umoja innercore, Nairobi, 30200, +254740563628</p>
                     <p>Send us your Feedback, we appreciate you:</p> <br> <br>
                     <form action="#" id="" method="get">
                         <input type="text" name="name" id="" placeholder="Please Enter Your Name" required>
