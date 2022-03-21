@@ -38,10 +38,13 @@
         <div class="home-content">
             <div class="inner-content">
                 <h3>Welcome To Gray's&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;pizza</h3> <br> <br>
-                <p>We are the pizza supreme of your dreams.When it comes to quality, we go to the source. <br> <br>
+                <p>We are the pizza supreme of your dreams. <br> When it comes to quality, we go to the source. <br> <br>
                     Topped with lots of pepperoni so you won't
                     feel lonely.</p>
                 <a href="#menu"><button class="btn">Menu</button></a>
+            </div>
+            <div class="inner-content-img">
+                <img src="/images/home2.png" alt="img">
             </div>
         </div>
     </section>
@@ -87,7 +90,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <h2>Classique Margharita</h2>
+                        <h2>Pepper Barbecue Chicken</h2>
                         <div class="price">ksh. 550 - 1200</div>
                         <a href="#order"><button class="btn">Order Now</button></a>
                     </div>
@@ -104,23 +107,6 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <h2>Beef Steak & Mushroom</h2>
-                        <div class="price">ksh. 550 - 1200</div>
-                        <a href="#order"><button class="btn">Order Now</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="in-box">
-                <i class="far fa-heart"></i>
-                <!-- <img src="veg.png" alt="img" class="veg-icon"> -->
-                <img src="/images/pngwing.(3).png" alt="">
-                <div class="in-content">
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
                         <h2>Hawaiian Pizza</h2>
                         <div class="price">ksh. 550 - 1200</div>
                         <a href="#order"><button class="btn">Order Now</button></a>
@@ -130,7 +116,7 @@
             <div class="in-box">
                 <i class="far fa-heart"></i>
                 <!-- <img src="veg.png" alt="img" class="veg-icon"> -->
-                <img src="/images/pngwing(4).png" alt="">
+                <img src="/images/mexican.jpg" alt="">
                 <div class="in-content">
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -138,7 +124,24 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <h2>Steak & Mushroom</h2>
+                        <h2>Beef and Mushroom</h2>
+                        <div class="price">ksh. 550 - 1200</div>
+                        <a href="#order"><button class="btn">Order Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="in-box">
+                <i class="far fa-heart"></i>
+                <!-- <img src="veg.png" alt="img" class="veg-icon"> -->
+                <img src="/images/pepperoni.jpg" alt="">
+                <div class="in-content">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <h2>Margherita Pizza</h2>
                         <div class="price">ksh. 550 - 1200</div>
                         <a href="#order"><button class="btn">Order Now</button></a>
                     </div>
@@ -156,7 +159,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <h2>Beef Steak & Mushroom</h2>
+                        <h2>Chicken Pepperoni Pizza</h2>
                         <div class="price">ksh. 550 - 1200</div>
                         <a href="#order"><button class="btn">Order Now</button></a>
                     </div>
@@ -173,7 +176,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <h2>Beef Steak & Mushroom</h2>
+                        <h2>Mexican Green Wave</h2>
                         <div class="price">ksh. 550 - 1200</div>
                         <a href="#order"><button class="btn">Order Now</button></a>
                     </div>
@@ -184,33 +187,33 @@
     <!-- order section -->
     <section>
         <div class="orders" id="order">
-             <h4>Order Now</h4>
+            <h4>Order Now</h4>
             <div class="form-group row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8 order-overlay text-center">
                     <form class="col-sm-6 offset-sm-3 text-center">
                         <label for="#">Choose Your Flavour</label>
-                        <select class="custom-select custom-select-lg mb-3 flavour" required>
+                        <select class="custom-select custom-select-lg mb-3" id="flavour" required>
                             <option selected>Default Custom Select Menu</option>
-                            <option value="vegtikka">Pepper Barbecue Chicken</option>
-                            <option value="vegtikka">Hawaiian Pizza</option>
-                            <option value="vegtikka">Beef and Mushroom</option>
-                            <option value="vegtikka">Chicken Pepperoni Pizza </option>
-                            <option value="vegtikka">Cheese n Tomato Pizza</option>
-                            <option value="vegtikka">Margherita Pizza</option>
-                            <option value="vegtikka">Mexican Green Wave</option>
+                            <option value="pepperchicken">Pepper Barbecue Chicken</option>
+                            <option value="hawaiian">Hawaiian Pizza</option>
+                            <option value="beefmushroom">Beef and Mushroom</option>
+                            <option value="pepperoni">Chicken Pepperoni Pizza </option>
+                            <option value="cheesetomato">Cheese n Tomato Pizza</option>
+                            <option value="margherita">Margherita Pizza</option>
+                            <option value="mexicangreen">Mexican Green Wave</option>
                         </select>
-                        <label for="#">Pick Preferred Size:</label>
+                        <label for="#">Pick Preferred Size</label>
                         <select class="custom-select custom-select-lg mb-3" id="size" required>
-                             <option selected>Default Custom Select Menu</option>
+                            <option selected>Default Custom Select Menu</option>
                             <option value="regular">Regular</option>
                             <option value="medium">Medium</option>
                             <option value="large">Large</option>
                         </select>
 
-                        <label for="crust">Pick your favorite Crust:</label>
+                        <label for="crust">Pick your favorite Crust</label>
                         <select class="custom-select custom-select-lg mb-3" id="crust" required>
-                             <option selected>Default Custom Select Menu</option>
+                            <option selected>Default Custom Select Menu</option>
                             <option value="thin">Thin Crust Ksh. 100</option>
                             <option value="thick">Thick Crust Ksh. 250</option>
                             <option value="flatbread">FlatBread Crust Ksh. 300</option>
@@ -220,16 +223,16 @@
                         <label>Choose Your favourite Toppings</label>
                         <select class="custom-select custom-select-lg mb-3" id="toppings" required>
                             <option selected>Default Custom Select Menu</option>
-                            <option value="tomato">Tomato @ Ksh. 80</option>
-                            <option value="onions">Onions @ Ksh. 80</option>
-                            <option value="mushroom">Mushroom @ Ksh. 80</option>
-                            <option value="greenpepper">Green Pepper @ Ksh. 80</option>
-                            <option value="olives">Olives @ Ksh. 120</option>
-                            <option value="pineapple">Pineapple @ Ksh. 120</option>
-                            <option value="sweetcorn">Sweet Corn @ Ksh. 120</option>
-                            <option value="mince">Wheat Thin Crust @ Ksh. 120</option>
-                            <option value="beef">Beef Peperoni @ Ksh. 170</option>
-                            <option value="chicken">Periperi Chicken @ Ksh. 170</option>
+                            <option value="tomato">Tomato @ Ksh. 100</option>
+                            <option value="onions">Onions @ Ksh. 100</option>
+                            <option value="mushroom">Mushroom @ Ksh. 100</option>
+                            <option value="greenpepper">Green Pepper @ Ksh. 100</option>
+                            <option value="olives">Olives @ Ksh. 150</option>
+                            <option value="pineapple">Pineapple @ Ksh. 150</option>
+                            <option value="sweetcorn">Sweet Corn @ Ksh. 150</option>
+                            <option value="wheatthin">Wheat Thin Crust @ Ksh. 150</option>
+                            <option value="beef">Beef Peperoni @ Ksh. 200</option>
+                            <option value="chicken">Periperi Chicken @ Ksh. 200</option>
                         </select>
                         <label for="number">Number of Pizza's</label>
                         <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
@@ -259,16 +262,16 @@
                         <input type="text" class="form-control cdata" placeholder="Please Enter your Mobile number">
                         <input type="text" class="form-control cdata" placeholder="Please Enter your location ">
                         <br>
-                        <button class="btn bg-info text-center d-block mx-auto go">Place Delivery</button>
+                        <button class="btn bg-info text-center d-block mx-auto go">Delivery</button>
                     </form>
 
                     <div class="col-sm-3"></div>
                 </div>
             </div>
-            <div class="d-block mx-auto text-center">
-                <button class='deliver'>Place Delivery</button>
+            <!-- <div class="d-block mx-auto text-center">
+                <button class='deliver'>Delivery</button>
                 <button class='delivernot'>Pick Up</button>
-            </div>
+            </div> -->
         </div>
         </div>
         </div>
@@ -280,7 +283,7 @@
         <div class="contact-sec">
             <div class="contact-inner">
                 <div class="contact-inner-col">
-                    <img src="/images/pngwing.(2).png" alt="img" class="image">
+                    <img src="/images/contact.png" alt="img" class="image">
                 </div>
                 <div class="contact-inner-col">
                     <h1>Contact Us&nbsp;<i class="fas fa-paper-plane"></i></h1>
@@ -310,6 +313,7 @@
 
 
 </body>
+<script src="lib/jquery-3.6.0.min.js"></script>
 <script src="script.js"></script>
 
 </html>
