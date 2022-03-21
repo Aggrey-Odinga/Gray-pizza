@@ -31,12 +31,12 @@ $(function () {
         let flavour = $("#flavour option:selected").val();
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
-        let Toppings = $("#toppings option:selected").val();
+        let toppings = $("#toppings option:selected").val();
         let number = $("#number").val();
 
         // order of execution
-        let order = (flavour, size, crust, topping, number, total) => {
-            return { flavour, size, crust, topping, number, total };
+        let order = (flavour, size, crust, toppings, number, total) => {
+            return { flavour, size, crust, toppings, number, total };
         };
 
         // price checklist
@@ -323,45 +323,45 @@ $(function () {
                 }
                 break;
         }
-        switch (Toppings) {
-            case Toppings = "tomato":
+        switch (toppings) {
+            case toppings = "tomato":
                 totalprice = totalprice + 100;
                 break;
-            case topping = "onions":
+            case toppings = "onions":
                 totalprice = totalprice + 100;
                 break;
-            case topping = "greenpepper":
+            case toppings = "greenpepper":
                 totalprice = totalprice + 100;
                 break;
-            case topping = "olives":
+            case toppings = "olives":
                 totalprice = totalprice + 100;
                 break;
-            case topping = "pineapple":
+            case toppings = "pineapple":
                 totalprice = totalprice + 150;
                 break;
-            case topping = "sweetcorn":
+            case toppings = "sweetcorn":
                 totalprice = totalprice + 150;
                 break;
-            case topping = "wheatthin":
+            case toppings = "wheatthin":
                 totalprice = totalprice + 150;
                 break;
-            case topping = "mushroom":
+            case toppings = "mushroom":
                 totalprice = totalprice + 150;
                 break;
-            case topping = "beef":
+            case toppings = "beef":
                 totalprice = totalprice + 200;
                 break;
-            case topping = "chicken":
+            case toppings = "chicken":
                 totalprice = totalprice + 200;
                 break;
         }
-        let newOrder = order(flavour, size, crust, topping, number, totalprice);
+        let newOrder = order(flavour, size, crust, toppings, number, totalprice);
         console.log(newOrder);
 
         $('.summary').slideDown(2000);
         $('.cdata-overlay').slideUp();
-        $('#list').slideDown();
         $('#deliver').show(1000);
+        $('#list').slideDown();
         $('#delivernot').show(1000);
 
         $('#list').text(" ");
@@ -369,7 +369,7 @@ $(function () {
            + newOrder.flavour + "<br>" + "Size :   "
             + newOrder.size + "<br>" + "Crust :     "
             + newOrder.crust + "<br>" + "Toppings :     "
-            + newOrder.topping + "<br>" + " Number of pizzas :    "
+            + newOrder.toppings + "<br>" + " Number of pizzas :    "
             + newOrder.number + "<br>" + "Total Price :  "
             + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
