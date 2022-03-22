@@ -225,6 +225,7 @@
 
                         <label>Choose Your favourite Toppings</label>
                         <select class="custom-select custom-select-lg mb-3" id="toppings" required>
+                            <option value=""></option>
                             <option value="tomato">Tomato @ Ksh. 100</option>
                             <option value="onions">Onions @ Ksh. 100</option>
                             <option value="mushroom">Mushroom @ Ksh. 150</option>
@@ -239,8 +240,9 @@
                         <label for="number">Number of Pizza's</label>
                         <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                             required>
-                        <button class="btn" id="checkout">Checkout</button>
+                  
                     </form>
+                          <button class="btn" id="checkout">Checkout</button>
                 </div>
 
             </div>
@@ -251,8 +253,10 @@
         <div class="order-summary" id="sum-order">
             <h1 class="text-center summary">Your Order</h1>
             <h2 class="text-center summary">Greetings, your order is as follows:</h2>
-            <ol id="list" class="text-center sum">
-            </ol>
+
+            <ol id="list" class="text-center sum"></ol>
+
+            
             <div class="cdata-overlay">
                 <div class="customerdata row">
                     <div class="col-sm-3"></div>
