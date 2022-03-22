@@ -35,7 +35,7 @@ $(function () {
         let number = $("#number").val();
 
         // order of execution
-        let order = (flavour, size, crust, toppings, number, total) => {
+        function order(flavour, size, crust, toppings, number, total) {
             return { flavour, size, crust, toppings, number, total };
         };
 
